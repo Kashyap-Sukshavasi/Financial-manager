@@ -18,15 +18,9 @@ if question=="no":
         print(f"Your monthly recommended budget for savings is ${savings_poor}")
         exit()
     if answer == "middle class":
-        def okay_man():
-            budget_okay = input(float("What is your budget every month?"))
-            return
-        okay_man()
+        
     if answer == "high income":
-        def top_g():
-            budget_g = input(float("What is your budget every month?"))
-            return
-            top_g()
+        
     else:
         #Main place for initial code launch Ex:Greetings, run code, etc.
         print("Welcome to the All Class Financial Manager!\nCreated by Kashyap Sukshavasi")
