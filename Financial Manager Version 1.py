@@ -1,17 +1,27 @@
 #Importing all the libraries needed for this project
 import os
-import pythonwin
 import math
 import time
 
-question = input("Is this your first time using my financial manager?").lower()
+question = input("Is this your first time using my budget manager?").lower()
 
 #Creating a function that hosts all the needed financial classes for this project
 def question1():
-    answer = input("What stage are you in your financial journey?\nJust to remind you, there are 3 levels. Low Income, Middle Class, and High Income!").title()
-    if answer == "Low Income":
+    answer = input("What stage are you in your financial journey?\n1 - Low Income \n2 - Middle Class \n3 - High Income \nPlease choose one of the numbers")
+    if answer == "1":
+        #Loading animation for visual dramatic effect
+        time.sleep(2)
+        print("\nYou have chosen Low Income...")
+        time.sleep(2)
+        print("Loading...25%")
+        time.sleep(2)
+        print("Loading...75%")
+        time.sleep(1)
+        print("Loading...100%")
+        time.sleep(2)
+        print("Welcome!")
         #All the variables listed here as well as the calculations for them.
-        budget_poor = float(input("What is your budget every month?"))
+        budget_poor = float(input("\n\nWhat is your budget every month?"))
         groceries_poor = 0.1 * budget_poor
         emergency_poor = 0.05 * budget_poor
         clothing_poor = 0.1 * budget_poor
@@ -31,9 +41,20 @@ def question1():
         elif question2 == "No":
             print("\n\nThank You for using this financial manager created by Kashyap & Zaid!")
             exit()
-    if answer == "Middle Class":
+    if answer == "2":
+        #Loading animation for visual dramatic effect
+        time.sleep(2)
+        print("\nYou have chosen Middle Class...")
+        time.sleep(2)
+        print("Loading...25%")
+        time.sleep(2)
+        print("Loading...75%")
+        time.sleep(1)
+        print("Loading...100%")
+        time.sleep(2)
+        print("Welcome!")
         #All the variables listed here as well as the calculations for them.
-        budget_middle = float(input("What is your budget every month?"))
+        budget_middle = float(input("\n\nWhat is your budget every month?"))
         groceries_middle = 0.15 * budget_middle
         emergency_middle = 0.05 * budget_middle
         clothing_middle = 0.15 * budget_middle
@@ -53,9 +74,20 @@ def question1():
         elif question2 == "No":
             print("\n\nThank You for using this financial manager created by Kashyap & Zaid!")
             exit()
-    if answer == "High Income":
+    if answer == "3":
+        #Loading animation for visual dramatic effect
+        time.sleep(2)
+        print("\nYou have chosen High Income...")
+        time.sleep(2)
+        print("Loading...25%")
+        time.sleep(2)
+        print("Loading...75%")
+        time.sleep(1)
+        print("Loading...100%")
+        time.sleep(2)
+        print("Welcome!")
         #All the variables listed here as well as the calculations for them.
-        budget_high = float(input("What is your budget every month?"))
+        budget_high = float(input("\n\nWhat is your budget every month?"))
         groceries_high = 0.15 * budget_high
         emergency_high = 0.05 * budget_high
         clothing_high = 0.15 * budget_high
