@@ -3,6 +3,7 @@ import os
 import time
 import math
 from Budget_manager  import main_code_budget
+from Fixed_deposit import main_code_deposit
 
 print("Welcome!")
 print("\nThis is the Money Manager Application built for you. This app is brought to you by Kashyap Sukshavasi(Lead Programmer) and Zaid Soboh(Lead Programmer)!")
@@ -22,9 +23,12 @@ if tutorial_question == "Yes":
 elif tutorial_question == "No":
     print("\n\nYou have multiple modes to choose from, such as...")
     print("\n1 - Monthly Budget Manager")
-    print("\n2 - Future stuff...")
+    print("\n2 - Fixed Deposit Calculator")
+    print("\n3 - Future Stuff...")
     print("\n\n")
     time.sleep(3)
     modes_question = input("Which mode would you like to use today?\nUse the numbers associated with the mode as an answer!\nYour answer:")
     if modes_question == "1":
         main_code_budget()
+    if modes_question == "2":
+        main_code_deposit()
