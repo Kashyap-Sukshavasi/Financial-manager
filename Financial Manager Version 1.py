@@ -20,7 +20,7 @@ def main_code_budget():
             time.sleep(1)
             print("Loading...100%")
             time.sleep(2)
-            print("Welcome!")
+            print("Welcome everyone!")
             #All the variables listed here as well as the calculations for them.
             budget_poor = float(input("\n\nWhat is your budget every month?"))
             groceries_poor = 0.1 * budget_poor
