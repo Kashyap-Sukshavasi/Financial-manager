@@ -4,7 +4,7 @@ def main_code_budget():
     import math
     import time
 
-    question = input("Is this your first time using my budget manager?").lower()
+    question = input("Is this your first time using my budget manager [yes/no]?:").lower()
 
     #Creating a function that hosts all the needed financial classes for this project
     def question1():
